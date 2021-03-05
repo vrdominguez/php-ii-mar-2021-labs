@@ -6,7 +6,7 @@ use \Base\Errors;
 
 abstract class User {
     protected string $userName;
-    protected string $passweord;
+    protected string $password;
     public function __construct( string $userName, string $password = '' ){
         $this->userName = $userName;
 
