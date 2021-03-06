@@ -4,7 +4,7 @@ namespace Base;
 
 use \Base\Errors;
 
-abstract class User {
+abstract class User implements \Interfaces\Member {
     protected string $userName;
     protected string $password;
     public function __construct( string $userName, string $password = '' ){
@@ -67,11 +67,11 @@ abstract class User {
                 return $this->$atribute;
             }
             else {
-                throw new \Exception(sprintf(Errors::ERROR_INEXISTENT_ATRIBUTE, $atribute));
+                throw new \BadFunctionCallException(sprintf(Errors::ERROR_INEXISTENT_ATRIBUTE, $atribute));
             }
         }
         else {
-            throw new \Exception(sprintf(Errors::ERROR_INEXISTENT_METHOD, $method));
+            throw new \BadFunctionCallException(sprintf(Errors::ERROR_INEXISTENT_METHOD, $method));
         }
     }
 }

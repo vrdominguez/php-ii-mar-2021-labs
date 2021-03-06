@@ -11,6 +11,7 @@ spl_autoload_register(
 
 use \Users\Admin as AdminUser;
 use \Users\Client as ClientUser;
+use \Exceptions\CustomException;
 
 $adm = new AdminUser( 'admin', '1234');
 echo "User data for admin:" . PHP_EOL . $adm . PHP_EOL;
@@ -39,10 +40,32 @@ echo "Now the new userName of the client is " . $client->getUserName() . PHP_EOL
 try {
     $client->badMethod('fails');
 }
-catch ( \Exception $e ) {
+catch ( \BadFunctionCallException $e ) {
     echo "This call fails with error: " . $e->getMessage() . PHP_EOL;
 }
+catch ( \Exception $e ) {
+    echo "Unespected error: " . $e->getMessage() . PHP_EOL;
+}
+
+echo PHP_EOL;
 
 // Serialize objects
-echo "Admin user serialized" . serialize($adm) . PHP_EOL;
-echo "Client user serialized" . serialize($client) . PHP_EOL;
+echo "Admin user serialized" . serialize($adm) . PHP_EOL
+    ."Client user serialized" . serialize($client) . PHP_EOL . PHP_EOL;
+
+
+// Test custom exception
+try {
+    throw new \Exceptions\CustomException('This is a test', 1, true);
+}
+catch (\Exceptions\CustomException $e ) {
+    if ( $e->isATest() ) {
+        echo "Testing exeption with message: " . $e->getMessage() . PHP_EOL;
+    }
+    else {
+        echo "Expected error without test mode: " . $e->getMessage() . PHP_EOL;
+    }
+}
+finally {
+    echo "Try - catch - finally test completed!" . PHP_EOL;
+}
