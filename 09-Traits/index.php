@@ -16,4 +16,5 @@ $user = new User ('admin', '123456', 'publisher');
 echo "Serialiced user: " . serialize($user) . PHP_EOL . PHP_EOL;
 
 echo "Using user as string will hide the values of: " . var_export($user->getHiddenValues, true) . PHP_EOL;
-echo "Testing string of user: " . PHP_EOL . $user . PHP_EOL . PHP_EOL;
+echo "Testing string of user: " . PHP_EOL . $user . PHP_EOL . PHP_EOL
+    ."Old __toString for user: " . PHP_EOL . $user->oldToString() . PHP_EOL . PHP_EOL;

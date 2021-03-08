@@ -11,5 +11,6 @@ class User {
 
     use \Traits\Serialization, \Traits\ToString {
         \Traits\ToString::__toString insteadof \Traits\Serialization;
+        \Traits\Serialization::__toString as oldToString;
     }
 }

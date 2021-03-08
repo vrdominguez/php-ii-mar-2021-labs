@@ -23,7 +23,7 @@ trait Serialization {
         $atributes = get_object_vars($this);
 
         foreach (  $this->toHide as $hiddenAtribute ) {
-            unset($atributes[$atribute]);
+            unset($atributes[$hiddenAtribute]);
         }
 
         $ret = '';
