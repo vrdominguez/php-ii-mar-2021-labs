@@ -23,9 +23,9 @@ services:
       - mysql
   
   php-cli:
-    build: . 
+    build: ./docker-php
     command: /bin/bash
     volumes:
-      - ./../:/labs
+      - .:/labs
     depends_on:
       - mysql
