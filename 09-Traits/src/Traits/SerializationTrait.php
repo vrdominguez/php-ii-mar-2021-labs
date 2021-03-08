@@ -2,7 +2,7 @@
 
 namespace Traits;
 
-trait Serialization {
+trait SerializationTrait {
     public array $toHide = [
         "password",
         "salt",

@@ -2,7 +2,7 @@
 
 namespace Traits;
 
-trait ToString {
+trait ToStringTrait {
     public function getHiddenValues() : array {
         return ["password", "salt"];
     }
