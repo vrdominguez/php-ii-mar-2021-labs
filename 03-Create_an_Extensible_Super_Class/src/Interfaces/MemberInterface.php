@@ -2,7 +2,7 @@
 
 namespace Interfaces;
 
-interface Member {
+interface MemberInterface {
     function setPassword( string $password ) : void;
     function login( string $password ) : bool;
 }

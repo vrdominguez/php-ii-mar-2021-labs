@@ -4,7 +4,7 @@ namespace Base;
 
 use \Base\Errors;
 
-abstract class User implements \Interfaces\Member {
+abstract class User implements \Interfaces\MemberInterface {
     protected string $userName;
     protected string $password;
     public function __construct( string $userName, string $password = '' ){
