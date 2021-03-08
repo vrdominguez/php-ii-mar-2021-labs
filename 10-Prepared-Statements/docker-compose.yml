@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      - MYSQL_DATABASE=phpcourse
+      - MYSQL_ROOT_PASSWORD=p455w0rd
+      - MYSQL_USER=vagrant
+      - MYSQL_PASSWORD=vagrant
+    volumes:
+      - ./database.sql:/docker-entrypoint-initdb.d/00-database.sql
+ 
+  phpmyadmin:
+    image: rexistro.dinaserver.com/proxy_cache/library/phpmyadmin
+    restart: unless-stopped
+    ports:
+     - 80:80
+    links: 
+      - mysql:db
+    depends_on:
+      - mysql
+  
+  php-cli:
+    build: . 
+    command: /bin/bash
+    volumes:
+      - ./../:/labs
+    depends_on:
+      - mysql

@@ -9,3 +9,4 @@
 - [Lab 07: Type Hinting](/07-Type_Hinting/) **Note:** Already done in [lab 03](/03-Create_an_Extensible_Super_Class/).
 - [Lab 08: Build Custom Exception Class](/08-Build_Custom_Exception_Class/) **Note:** Already done in [lab 03](/03-Create_an_Extensible_Super_Class/).
 - [Lab 09: Traits](/09-Traits/).
+- [Lab 10: Prepared Statements](/10-Prepared-Statements/). **Note:** Includes docker-compose with database, phpmyadmin and php container for running the exercise. (run cli with ```docker-compose exec php-cli /bin/bash```).
