@@ -6,8 +6,8 @@ try {
         'mysql:host=mysql;dbname=phpcourse','vagrant','vagrant',
         [PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION]
     );
+    
     // Prepare an SQL statement and get a statement object
-
     $stmt = $pdo->prepare( 'INSERT INTO customers(firstname, lastname) VALUES (:firstname, :lastname)' );
 
     // Execute the SQL statement
