@@ -1,18 +1,20 @@
 # PHP Fundamentals II Labs responses
 
-- [Lab 01: Namespaces](/01-Namespace/README.md).
-- [Lab 02: Create a Class](/02-Create_a_Class/).
-- [Lab 03: Create an Extensible Super Class](/03-Create_an_Extensible_Super_Class/).
-- [Lab 04: Magic Methods](/04-Magic_Methods/) **Note:** Already done in [lab 03](/03-Create_an_Extensible_Super_Class/).
-- [Lab 05: Abstrac Classes](/05-Abstrac_Classes/) **Note:** Already done in [lab 03](/03-Create_an_Extensible_Super_Class/).
-- [Lab 06: Interfaces](/06-Interfaces/) **Note:** Already done in [lab 03](/03-Create_an_Extensible_Super_Class/).
-- [Lab 07: Type Hinting](/07-Type_Hinting/) **Note:** Already done in [lab 03](/03-Create_an_Extensible_Super_Class/).
-- [Lab 08: Build Custom Exception Class](/08-Build_Custom_Exception_Class/) **Note:** Already done in [lab 03](/03-Create_an_Extensible_Super_Class/).
-- [Lab 09: Traits](/09-Traits/).
-- [Lab 10: Prepared Statements](/10-Prepared-Statements/).
-- [Lab 11: Stored Procedure](/11-Stored_Procedure/).
-- [Lab 12: Transaction](/12-Transaction/).
-- [Lab 13: Validate an Email Address](/13-Validate_an_Email_Address/)
+- [Lab 01:](/01-Namespace/README.md) Namespaces.
+- [Lab 02:](/02-Create_a_Class/) Create a Class.
+- [Labs 03 - 08:](/03-Create_an_Extensible_Super_Class/). Classes, Types, Interfaces and Exceptions:
+  - Lab 03: Create an Extensible Super Class.
+  - Lab 04: Magic Methods
+  - Lab 05: Abstrac Classes
+  - Lab 06: Interfaces
+  - Lab 07: Type Hinting
+  - Lab 08: Build Custom Exception Class
+- [Lab 09:](/09-Traits/) Traits.
+- [Lab 10:](/10-Prepared-Statements/)  Prepared Statements.
+- [Lab 11:](/11-Stored_Procedure/) Stored Procedure.
+- [Lab 12:](/12-Transaction/)  Transaction.
+- [Lab 13:](/13-Validate_an_Email_Address/) Validate an Email Address.
+- [Lab 14:](/14-Composer_with_OrderApp/) Composer with OrderApp.
 
 ## Docker for labs
 
