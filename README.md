@@ -12,6 +12,7 @@
 - [Lab 10: Prepared Statements](/10-Prepared-Statements/).
 - [Lab 11: Stored Procedure](/11-Stored_Procedure/).
 - [Lab 12: Transaction](/12-Transaction/).
+- [Lab 13: Validate an Email Address](/13-Validate_an_Email_Address/)
 
 ## Docker for labs
 
