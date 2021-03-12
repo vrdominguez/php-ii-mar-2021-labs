@@ -31,8 +31,6 @@
  * Application Entry
  */
 
-define('BASE', realpath(__DIR__ . '/../'));
-
 require '../vendor/autoload.php';
 
 // // "use" the front controller and services
